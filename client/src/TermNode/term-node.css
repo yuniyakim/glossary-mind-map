@@ -1,0 +1,13 @@
+.node {
+  border: 0.5px solid grey;
+  border-radius: 5px;
+  max-width: 200px;
+  min-width: 100px;
+  width: auto;
+  padding: 5px 10px;
+  font-size: 9.5pt;
+}
+
+.definition {
+  font-size: 4pt;
+}
