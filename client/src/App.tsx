@@ -17,14 +17,14 @@ function App () {
   const nodeTypes = useMemo(() => ({ term: TermNode }), []);
 
   useEffect(() => {
-    axios.get(`http://localhost:9000/api/mind-map`)
+    axios.get('http://localhost:5000/api/mind-map')
     .then(res => {
       const data = res.data;
       setNodes(data.nodes);
       setEdges(data.edges);
     })
+    .catch(error => console.log(error));
   }, []);
-
 
   return (
     <ReactFlow
